@@ -1,10 +1,10 @@
 // Home.test.js
-import React from 'react';
-import { render, screen } from '@testing-library/react';
-import '@testing-library/jest-dom'; // Para asserções como .toBeInTheDocument()
-import Home from './page'; // Certifique-se de que o caminho para o componente está correto
+import React from "react";
+import { render, screen } from "@testing-library/react";
+import "@testing-library/jest-dom"; // Para asserções como .toBeInTheDocument()
+import Home from "./page"; // Certifique-se de que o caminho para o componente está correto
 
-test('verifica se o componente Home é renderizado com o texto correto', () => {
+test("verifica se o componente Home é renderizado com o texto correto", () => {
   // Renderiza o componente
   render(<Home />);
 

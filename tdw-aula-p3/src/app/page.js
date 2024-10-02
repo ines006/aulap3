@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import React from 'react';
+import React from "react";
 
 export default function Home() {
   return (
@@ -15,16 +15,16 @@ export default function Home() {
           priority
         />
 
-    <div>
-      <h1>Welcome to the Home page!</h1>
-      <p>This is the home page of our application.</p>
-    </div>
+        <div>
+          <h1>Welcome to the Home page!</h1>
+          <p>This is the home page of our application.</p>
+        </div>
 
         <ol>
           <li> Teste de prettier</li> <li>mais um teste </li>{" "}
           <li> Teste de prettier</li> <li>maais um teste </li>{" "}
           <li> Teste de prettier</li> <li>maais um teste </li>{" "}
-          <li> Teste de prettier</li> <li>maais um teste </li>
+          <li> Teste de prettier</li> <li>maais um teste </li>
         </ol>
 
         <div className={styles.ctas}>
