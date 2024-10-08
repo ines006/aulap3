@@ -15,15 +15,15 @@ jobs:
       - run: echo "📦 The workflow is now ready to test your code on the runner."
 
       # Instalar as dependências do projeto
-      - name: Install dependencies
-        run: npm install
+      # - name: Install dependencies
+      #   run: npm install
 
       # Executar os testes Jest
       - name: Run Jest tests
         run: npm test
 
       # Opcional: listar os ficheiros no diretório para verificar a workspace
-      - name: List files in the repository
-        run: ls ${{ github.workspace }}
+      # - name: List files in the repository
+      #   run: ls ${{ github.workspace }}
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
