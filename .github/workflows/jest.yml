@@ -15,8 +15,8 @@ jobs:
       - run: echo "📦 The workflow is now ready to test your code on the runner."
 
       # Instalar as dependências do projeto
-      # - name: Install dependencies
-      #   run: npm install
+      - name: Install dependencies
+        run: npm install
 
       # Executar os testes Jest
       - name: Run Jest tests
