@@ -23,7 +23,7 @@ jobs:
         run: npm test
 
       # Opcional: listar os ficheiros no diretório para verificar a workspace
-      # - name: List files in the repository
-      #   run: ls ${{ github.workspace }}
+      - name: List files in the repository
+        run: ls ${{ github.workspace }}
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
