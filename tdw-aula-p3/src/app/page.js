@@ -26,7 +26,7 @@ export default function Home() {
           <li> Teste de prettier</li> <li>maais um teste </li>{" "}
           <li> Teste de prettier</li> <li>maais um teste </li>
           <li> Teste david</li> <li>maais um teste </li>
-          <li> Teste ines</li> <li>maais um teste </li>
+          <li> Teste ines</li> <li>vamos ver se dá </li>
         </ol>
 
         <div className={styles.ctas}>
