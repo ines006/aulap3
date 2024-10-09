@@ -12,7 +12,11 @@ module.exports = {
       statements: 80,
     },
   },
+  moduleNameMapper: {
+    '\\.(css|less|scss|sass)$': 'identity-obj-proxy', // Mockar arquivos CSS
+  },
 };
+
 
 
 // module.exports = {
