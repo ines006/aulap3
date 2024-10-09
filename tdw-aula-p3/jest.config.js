@@ -1,6 +1,8 @@
 // jest.config.js
 
 module.exports = {
+  collectCoverage: true, // Ativa a coleta de cobertura
+
   coverageThreshold: {
     global: {
       branches: 80,
@@ -9,7 +11,7 @@ module.exports = {
       statements: 80
     }
   },
-  
+
   transform: {
     "^.+\\.jsx?$": "babel-jest", // Adiciona suporte para JSX
   },
