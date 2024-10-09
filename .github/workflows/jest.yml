@@ -14,28 +14,24 @@ jobs:
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "📦 The workflow is now ready to test your code on the runner."
 
-      # Mudar para o diretório correto do projeto (tdw-aula-p3)
-      - name: Change directory to project folder
-        run: cd ./tdw-aula-p3 # Mudar para a pasta correta do projeto
-
       # Instalar as dependências do projeto
       - name: Install dependencies
-        run: |
-          cd ./tdw-aula-p3 # Entrar na pasta correta
-          npm install
+        working-directory: ./tdw-aula-p3 
+        run: npm install
 
       # Executar os testes Jest
       # - name: Run Jest tests
-      #   run: |
-      #     cd tdw-aula-p3 # Certifica-te que estás na pasta correta
-      #     npm test
+      #   working-directory: ./tdw-aula-p3
+      #   run: npm test
 
       # Executar os testes Jest com code coverage
       - name: Run tests with coverage
+        working-directory: ./tdw-aula-p3 
         run: npm run test:coverage
 
       # Listar os ficheiros no diretório para verificar a workspace
       - name: List files in the repository
-        run: ls ${{ github.workspace }}/tdw-aula-p3
+        working-directory: ./tdw-aula-p3 
+        run: ls
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
