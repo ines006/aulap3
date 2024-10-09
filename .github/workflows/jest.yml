@@ -30,6 +30,10 @@ jobs:
           cd tdw-aula-p3 # Certifica-te que estás na pasta correta
           npm test
 
+      # Executar os testes Jest com code coverage
+      - name: Run tests with coverage
+        run: npm run test:coverage
+
       # Listar os ficheiros no diretório para verificar a workspace
       - name: List files in the repository
         run: ls ${{ github.workspace }}/tdw-aula-p3
