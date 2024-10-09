@@ -3,6 +3,9 @@ import styles from "./page.module.css";
 import React from "react";
 
 export default function Home() {
+
+  const punycode = require('punycode');
+
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -25,7 +28,8 @@ export default function Home() {
           <li> Teste de prettier</li> <li>maais um teste </li>{" "}
           <li> Teste de prettier</li> <li>maais um teste </li>{" "}
           <li> Teste de prettier</li> <li>maais um teste </li>
-          <li> Teste david</li> <li>maais um teste </li>
+          <li> alterar page home para snapchot</li>
+          <li> alterar page home para snapchot 2</li>
         </ol>
 
         <div className={styles.ctas}>
