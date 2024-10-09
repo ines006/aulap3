@@ -25,10 +25,10 @@ jobs:
           npm install
 
       # Executar os testes Jest
-      - name: Run Jest tests
-        run: |
-          cd tdw-aula-p3 # Certifica-te que estás na pasta correta
-          npm test
+      # - name: Run Jest tests
+      #   run: |
+      #     cd tdw-aula-p3 # Certifica-te que estás na pasta correta
+      #     npm test
 
       # Executar os testes Jest com code coverage
       - name: Run tests with coverage
