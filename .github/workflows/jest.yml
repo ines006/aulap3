@@ -16,12 +16,12 @@ jobs:
 
       # Mudar para o diretório correto do projeto (tdw-aula-p3)
       - name: Change directory to project folder
-        run: cd tdw-aula-p3 # Mudar para a pasta correta do projeto
+        run: cd ./tdw-aula-p3 # Mudar para a pasta correta do projeto
 
       # Instalar as dependências do projeto
       - name: Install dependencies
         run: |
-          cd tdw-aula-p3 # Entrar na pasta correta
+          cd ./tdw-aula-p3 # Entrar na pasta correta
           npm install
 
       # Executar os testes Jest
