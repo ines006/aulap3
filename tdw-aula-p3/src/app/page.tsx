@@ -3,8 +3,8 @@ import styles from "./page.module.css";
 import React from "react";
 
 export default function Home() {
-
-  const punycode = require('punycode');
+  // O módulo punycode não é necessário aqui, você pode removê-lo
+  // const punycode = require('punycode'); // Remova esta linha
 
   return (
     <div className={styles.page}>
@@ -24,12 +24,16 @@ export default function Home() {
         </div>
 
         <ol>
-          <li> Teste de prettier</li> <li>mais um teste </li>{" "}
-          <li> Teste de prettier</li> <li>maais um teste </li>{" "}
-          <li> Teste de prettier</li> <li>maais um teste </li>{" "}
-          <li> Teste de prettier</li> <li>maais um teste </li>
-          <li> alterar page home para snapchot</li>
-          <li> alterar page home para snapchot 2</li>
+          <li>Teste de prettier</li>
+          <li>mais um teste</li>
+          <li>Teste de prettier</li>
+          <li>maais um teste</li>
+          <li>Teste de prettier</li>
+          <li>maais um teste</li>
+          <li>Teste de prettier</li>
+          <li>maais um teste</li>
+          <li>alterar page home para snapshot</li>
+          <li>alterar page home para snapshot 2</li>
         </ol>
 
         <div className={styles.ctas}>

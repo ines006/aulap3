@@ -1,8 +1,12 @@
 // jest.config.js
-
-
 module.exports = {
+  preset: 'ts-jest',
   testEnvironment: 'jsdom',
+  setupFilesAfterEnv: ['<rootDir>/setupTests.js'], // Certifique-se que o caminho está correto
+  transform: {
+    '^.+\\.tsx?$': 'ts-jest',
+  '^.+\\.jsx?$': 'babel-jest', 
+  },
   coverageDirectory: 'coverage',
   coverageThreshold: {
     global: {
