@@ -23,6 +23,7 @@ export default function Home() {
         <div>
           <h1>Welcome to the Home page!</h1>
           <p>This is the home page of our application.</p>
+          <p>Alteração online - netlify</p>
         </div>
 
         <ol>
