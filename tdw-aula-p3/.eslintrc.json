@@ -1,7 +1,6 @@
 {
-    "extends": "next/core-web-vitals",
-    "rules": {
-      "react/react-in-jsx-scope": "off" // Desabilitar se estiver usando Next.js 12 ou superior
-    }
+  "extends": "next/core-web-vitals",
+  "rules": {
+    "react/react-in-jsx-scope": "off" // Desabilitar se estiver usando Next.js 12 ou superior
   }
-  
+}
