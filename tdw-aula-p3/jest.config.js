@@ -5,7 +5,7 @@
 //   setupFilesAfterEnv: ['<rootDir>/setupTests.js'], // Certifique-se que o caminho está correto
 //   transform: {
 //     '^.+\\.tsx?$': 'ts-jest',
-//   '^.+\\.jsx?$': 'babel-jest', 
+//   '^.+\\.jsx?$': 'babel-jest',
 //   },
 //   coverageDirectory: 'coverage',
 //   coverageThreshold: {
@@ -22,20 +22,19 @@
 // };
 
 module.exports = {
-  preset: 'ts-jest', // Usa o preset do ts-jest para transformar arquivos TypeScript
-  testEnvironment: 'jsdom', // Simula o DOM para testes de componentes React
+  preset: "ts-jest", // Usa o preset do ts-jest para transformar arquivos TypeScript
+  testEnvironment: "jsdom", // Simula o DOM para testes de componentes React
   transform: {
-    '^.+\\.tsx?$': 'ts-jest', // Transforma arquivos .ts e .tsx usando ts-jest
+    "^.+\\.tsx?$": "ts-jest", // Transforma arquivos .ts e .tsx usando ts-jest
   },
-  moduleFileExtensions: ['ts', 'tsx', 'js', 'jsx', 'json', 'node'], // Suporta múltiplas extensões
+  moduleFileExtensions: ["ts", "tsx", "js", "jsx", "json", "node"], // Suporta múltiplas extensões
   transformIgnorePatterns: [
     "/node_modules/(?!react|other-esm-package)", // Adicione aqui qualquer outro pacote em ESM
   ],
   moduleNameMapper: {
-    '\\.(css|scss)$': 'identity-obj-proxy', // Ignora arquivos de estilo
+    "\\.(css|scss)$": "identity-obj-proxy", // Ignora arquivos de estilo
   },
 };
-
 
 // module.exports = {
 //   collectCoverage: true, // Ativa a coleta de cobertura

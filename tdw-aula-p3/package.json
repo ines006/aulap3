@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "prettier": "prettier --check .",
+    "format": "prettier --write .",
     "dev": "next dev",
     "test": "jest",
     "test:coverage": "jest --coverage",
@@ -33,7 +35,7 @@
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
-    "prettier": "3.3.3",
+    "prettier": "^3.3.3",
     "ts-jest": "^29.2.5",
     "typescript": "^5.6.3"
   }
