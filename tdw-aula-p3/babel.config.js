@@ -6,3 +6,4 @@ module.exports = {
     "@babel/preset-typescript" // Adiciona suporte para TypeScript.
   ],
 };
+
